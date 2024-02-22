@@ -4,5 +4,6 @@ Perhaps, there's a cooler way to utilize models from platforms like Hugging Face
 
 ```python
 from serverlessai.maas import modelscope
-ocr = modelscope("https://modelscope.cn/models/iic/cv_resnet18_card_correction/summary", local=True).run("image url")
+model_url = "https://modelscope.cn/models/iic/cv_resnet18_card_correction/summary"
+ocr = modelscope(model_url, local=True).run("image url")
 ```
