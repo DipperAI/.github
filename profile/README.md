@@ -1,12 +1,8 @@
-## Hi there 👋
+# Maybe, even cooler!
 
-<!--
+Perhaps, there's a cooler way to utilize models from platforms like Hugging Face and ModelScope more swiftly. Imagine, just with a few lines of code, having the capability of Serverless architecture-based model functionalities in our projects. How amazing that would be!
 
-**Here are some ideas to get you started:**
-
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+```python
+from serverlessai.maas import modelscope
+ocr = modelscope("https://modelscope.cn/models/iic/cv_resnet18_card_correction/summary", local=True).run("image url")
+```
