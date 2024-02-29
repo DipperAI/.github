@@ -6,5 +6,5 @@ DipperAI revolutionizes AI model deployment with a serverless Model-as-a-Service
 ```python
 from dipperai.maas import modelscope
 model_url = "https://modelscope.cn/models/iic/cv_resnet18_card_correction/summary"
-ocr = modelscope(model_url, local=True).run("image url")
+ocr = modelscope(model_url).invoke("image url")
 ```
